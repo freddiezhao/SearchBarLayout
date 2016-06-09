@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:background="@android:color/white"
     android:layout_height="match_parent">
-    <com.porster.searchbarlayoout.widget.SearchBarLayout
+    <com.porster.searchbarlayout.widget.SearchBarLayout
         android:id="@+id/searchBarlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

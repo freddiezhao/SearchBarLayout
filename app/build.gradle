@@ -4,7 +4,7 @@ android {
     compileSdkVersion 21
     buildToolsVersion '23.0.3'
     defaultConfig {
-        applicationId "com.porster.searchbarlayoout"
+        applicationId "com.porster.searchbarlayout"
         minSdkVersion 10
         targetSdkVersion 21
         versionCode 1

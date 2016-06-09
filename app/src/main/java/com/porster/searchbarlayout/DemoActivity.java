@@ -1,4 +1,4 @@
-package com.porster.searchbarlayoout;
+package com.porster.searchbarlayout;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.porster.searchbarlayoout.widget.SearchBarLayout;
+import com.porster.searchbarlayout.widget.SearchBarLayout;
 
 import java.util.ArrayList;
 import java.util.List;

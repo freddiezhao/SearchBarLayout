@@ -1,4 +1,4 @@
-package com.porster.searchbarlayoout;
+package com.porster.searchbarlayout;
 
 import org.junit.Test;
 

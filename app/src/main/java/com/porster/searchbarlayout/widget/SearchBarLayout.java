@@ -1,4 +1,4 @@
-package com.porster.searchbarlayoout.widget;
+package com.porster.searchbarlayout.widget;
 
 
 import android.content.Context;
@@ -23,7 +23,7 @@ import com.nineoldandroids.animation.AnimatorListenerAdapter;
 import com.nineoldandroids.animation.ObjectAnimator;
 import com.nineoldandroids.animation.ValueAnimator.AnimatorUpdateListener;
 import com.nineoldandroids.view.ViewHelper;
-import com.porster.searchbarlayoout.R;
+import com.porster.searchbarlayout.R;
 
 public class SearchBarLayout extends RelativeLayout{
 	
