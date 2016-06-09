@@ -1,4 +1,4 @@
-# SearchBarLayoout
+# SearchBarLayout
 仿IOS搜索栏
 ===
 Use:
