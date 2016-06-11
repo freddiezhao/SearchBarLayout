@@ -27,8 +27,7 @@ import com.porster.searchbarlayout.R;
 
 public class SearchBarLayout extends RelativeLayout{
 	
-	public static final int DEF_CURSOR_SPACING=5;
-	
+
 	private EditText mEditText;
 	private MyTextView mTextView;
 	private TextView cancelTextView;
@@ -43,7 +42,11 @@ public class SearchBarLayout extends RelativeLayout{
 	
 	
 	private boolean hasAnimtion;
-	
+
+	/**
+	 * 在绘制较卡的界面,调用该方法,已关闭动画效果
+	 * @param hasAnimtion
+     */
 	public void setHasAnimtion(boolean hasAnimtion) {
 		this.hasAnimtion = hasAnimtion;
 	}
@@ -300,7 +303,7 @@ public class SearchBarLayout extends RelativeLayout{
 		}
 	}
 
-	public void hiddenKeybord() {
+	private void hiddenKeybord() {
 		InputMethodManager manager = ((InputMethodManager) getContext().getSystemService(Context.INPUT_METHOD_SERVICE));
 		boolean isOpen = manager.isActive(); // 判断软键盘是否打开
 		if (isOpen && manager != null) {
@@ -309,7 +312,7 @@ public class SearchBarLayout extends RelativeLayout{
 			manager.showSoftInputFromInputMethod(mEditText.getWindowToken(), 0);
 		}
 	}
-	public int dip2px(float dpValue) {
+	private int dip2px(float dpValue) {
 		final float scale = getContext().getResources().getDisplayMetrics().density;
 		return (int) (dpValue * scale + 0.5f);
 	}
