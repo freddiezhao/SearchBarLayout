@@ -103,7 +103,7 @@ public class SearchBarLayout extends RelativeLayout{
 			@Override
 			public void onFocusChange(View v, boolean hasFocus) {
 				if (!hasFocus) {
-					clearFocu();
+					cancelFocus();
 				} else {
 					focused();
 				}
@@ -158,7 +158,7 @@ public class SearchBarLayout extends RelativeLayout{
 			addClickEffect(cancelTextView).setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				clearFocu();
+				cancelFocus();
 			}
 			});
 		}
@@ -255,7 +255,7 @@ public class SearchBarLayout extends RelativeLayout{
 	}
 	private boolean cancelAnimator;
 	
-	public void clearFocu() {
+	public void cancelFocus() {
 		if (mEditText.isFocused() && !cancelAnimator) {
 			if(TextUtils.isEmpty(mEditText.getText().toString())){
 				ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(mTextView,"translationX",ViewHelper.getTranslationX(mTextView),0);
